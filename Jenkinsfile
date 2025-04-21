@@ -1,4 +1,6 @@
- agent any 
+pipeline {
+
+agent any 
     
                                        
          stage("Build"){
@@ -7,4 +9,4 @@
                  sh 'python app.py'
              }
          }
-         
+}
