@@ -1,12 +1,15 @@
 pipeline {
-
-agent any 
     
-                                       
-         stage("Build"){
-             
-             steps {
-                 sh 'python app.py'
-             }
-         }
+    agent any
+
+    stages {
+        
+        stage('Build') {
+            
+            steps {
+                
+                sh 'python abc.py'
+            }
+        }
+    }
 }
